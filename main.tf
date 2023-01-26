@@ -9,8 +9,7 @@ terraform {
 }
 
 module "userdata" {
-  source  = "ilpozzd/vm-userdata/talos"
-  version = "1.0.1"
+  source  = "github.com/skbki/terraform-talos-vm-userdata"
 
   count = var.vm_count
 
